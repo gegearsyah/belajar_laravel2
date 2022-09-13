@@ -5,3 +5,5 @@ Ini ada tulisannya
 {{$json['dataangka1']}}
 <br>
 {{$json['dataangka2']}}
+
+ajduawhodiawoi
