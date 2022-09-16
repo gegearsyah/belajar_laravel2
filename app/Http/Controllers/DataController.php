@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\data;
 
 class DataController extends Controller
 {
@@ -33,5 +34,28 @@ class DataController extends Controller
 
         return $json;
     }
+
+    public function get_data(){
+        $data = data::all();
+        return $data;
+    }
+
+    public function create_data(){
+        $nama ="gege";
+        $semeter="5";
+        $nim="23";
+        $data = data::create([
+            'nama'=>$nama,
+            'semeter'=>$semeter,
+            'nim'=>$nim,
+        ]);
+
+        return "Data Berhasil Dibuat";
+    }
+
+
+    
+
+
     
 }
